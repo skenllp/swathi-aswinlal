@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://swathi-aswinlal.vercel.app/">
 <meta property="og:title" content="Swathi S &amp; Aswinlal V | Wedding Invitation">
 <meta property="og:description" content="Join us in celebrating the wedding of Swathi S &amp; Aswinlal V — Sunday, 1st November 2026 at Miami Convention Center, Kozhikode.">
-<meta property="og:image" content="https://swathi-aswinlal.vercel.app/assets/og-image.jpg">
+<meta property="og:image" content="https://swathi-aswinlal.vercel.app/">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Swathi S &amp; Aswinlal V | Wedding Invitation">
 <meta name="twitter:description" content="1 November 2026 · Miami Convention Center, Kozhikode">
-<meta name="twitter:image" content="https://swathi-aswinlal.vercel.app/assets/og-image.jpg">
+<meta name="twitter:image" content="https://swathi-aswinlal.vercel.app/">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%236E2A3A'/%3E%3Cpath d='M32 14c-1.5 4-5 6-5 11 0 3 2.2 5 5 5s5-2 5-5c0-5-3.5-7-5-11z' fill='%23C9A063'/%3E%3Cpath d='M18 40c0-4 6-7 14-7s14 3 14 7-6 5-14 5-14-1-14-5z' fill='none' stroke='%23C9A063' stroke-width='2'/%3E%3Cline x1='32' y1='42' y2='50' x2='32' stroke='%23C9A063' stroke-width='2'/%3E%3Cline x1='20' y1='50' x2='44' y2='50' stroke='%23C9A063' stroke-width='2'/%3E%3C/svg%3E">
 
@@ -425,50 +425,6 @@ button{ font-family:inherit; cursor:pointer; }
   opacity:.9;
 }
 
-/* ============================================================
-   SITE NAVIGATION — minimal floating pill, appears after the
-   opening video ends. Matches the music-toggle / skip-intro
-   floating-control language already used site-wide.
-   ============================================================ */
-#site-nav{
-  position:fixed;
-  z-index:200;
-  top:max(16px, env(safe-area-inset-top));
-  left:50%;
-  transform:translateX(-50%) translateY(-12px);
-  display:flex;
-  align-items:center;
-  gap:clamp(10px,2.4vw,22px);
-  padding:10px clamp(14px,3vw,24px);
-  border:1px solid rgba(255,248,232,.4);
-  border-radius:30px;
-  background:rgba(110,42,58,.55);
-  backdrop-filter:blur(4px);
-  opacity:0;
-  visibility:hidden;
-  transition:opacity .5s var(--ease-soft), visibility .5s, transform .5s var(--ease-soft), background .3s;
-  max-width:94vw;
-  overflow-x:auto;
-  scrollbar-width:none;
-}
-#site-nav::-webkit-scrollbar{ display:none; }
-#site-nav.is-visible{ opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); }
-.nav-link{
-  font-family:var(--font-body);
-  font-size:10.5px;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  font-weight:600;
-  color:var(--jasmine);
-  opacity:.8;
-  white-space:nowrap;
-  transition:opacity .3s;
-}
-.nav-link:hover, .nav-link:active{ opacity:1; }
-@media (min-width:900px){
-  .nav-link{ font-size:11px; }
-}
-
 body.intro-active{ overflow:hidden; height:100vh; }
 main{ opacity:0; }
 main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
@@ -494,7 +450,6 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   z-index:2;
   width:100%;
   max-width:var(--container);
-  text-shadow:0 2px 16px rgba(15,10,4,.4), 0 1px 3px rgba(15,10,4,.3);
 }
 .bg-layer{
   position:absolute;
@@ -703,7 +658,6 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   line-height:1;
   letter-spacing:.02em;
   font-variant-numeric:tabular-nums;
-  text-shadow:0 2px 10px rgba(0,0,0,.4);
 }
 .countdown .num::before{
   content:''; position:absolute; inset:0; border-radius:6px;
@@ -729,7 +683,6 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   text-transform:uppercase;
   font-weight:600;
   color:var(--gold-soft);
-  text-shadow:0 1px 4px rgba(0,0,0,.5);
 }
 .countdown .sep{
   display:flex;
@@ -1058,14 +1011,6 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
 <div id="cursor-dot" aria-hidden="true"></div>
 <div id="scroll-progress" aria-hidden="true"></div>
 
-<nav id="site-nav" aria-label="Main Navigation">
-  <a href="#hero" class="nav-link">Home</a>
-  <a href="#couple" class="nav-link">Couple</a>
-  <a href="#wedding" class="nav-link">Wedding</a>
-  <a href="#venue" class="nav-link">Venue</a>
-  <a href="#gallery" class="nav-link">Gallery</a>
-</nav>
-
 <!-- ============================================================
      OPENING VIDEO
      ============================================================ -->
@@ -1221,9 +1166,9 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
 
       <div class="locations-grid">
         <a class="location-card reveal" href="https://share.google/DzYPfWrrcUa0KdJdE" target="_blank" rel="noopener">
-          <img class="location-thumb" src="assets/location-venue.jpg" alt="Miami Convention Center" width="44" height="44" loading="lazy">
+          <img class="location-thumb" src="assets/gallery/venue.jpg" alt="Miami Convention Center" width="44" height="44" loading="lazy">
           <span class="location-name">Miami Convention Center</span>
-          <span class="location-address">Thalakkulathur, Andikode,<br>Kozhikode</span>
+          <!-- <span class="location-address">Thalakkulathur, Andikode,<br>Kozhikode</span> -->
           <span class="location-cta">View Location <span class="arrow">&rarr;</span></span>
         </a>
       </div>
@@ -1364,7 +1309,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
       <div class="closing-names reveal-scale">Swathi &amp; Aswinlal</div>
       <div class="closing-date reveal">01 · 11 · 2026</div>
 
-      <div class="closing-final">Created by <a href="https://sahilmuhd.com" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">sahilmuhd.com</a></div>
+      <!-- <div class="closing-final">Created by <a href="https://sahilmuhd.com" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">sahilmuhd.com</a></div> -->
     </div>
   </footer>
 
@@ -1737,26 +1682,6 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
 
   /* ---------------------------------------------------------
      8b. SITE NAVIGATION — reveals once the opening intro ends,
-         same trigger moment as the music toggle.
-  --------------------------------------------------------- */
-  var siteNav = document.getElementById('site-nav');
-  if(siteNav){
-    var navObserver = new MutationObserver(function(){
-      if(!openingEl.classList.contains('is-fading')) return;
-      siteNav.classList.add('is-visible');
-    });
-    navObserver.observe(openingEl, { attributes:true, attributeFilter:['class'] });
-    siteNav.querySelectorAll('.nav-link').forEach(function(link){
-      link.addEventListener('click', function(e){
-        var targetId = link.getAttribute('href');
-        var targetEl = targetId && document.querySelector(targetId);
-        if(!targetEl) return;
-        e.preventDefault();
-        targetEl.scrollIntoView({ behavior: reduceMotionCountdown ? 'auto' : 'smooth' });
-      });
-    });
-  }
-
   /* ---------------------------------------------------------
      9. GALLERY LIGHTBOX
   --------------------------------------------------------- */
