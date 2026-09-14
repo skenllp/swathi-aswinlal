@@ -146,6 +146,9 @@ button{ font-family:inherit; cursor:pointer; }
   text-transform:uppercase;
   color:var(--gold-deep);
   font-weight:600;
+  text-shadow:
+    0 1px 2px rgba(0,0,0,.8),
+    0 2px 6px rgba(0,0,0,.5);
 }
 .section-title{
   font-family:var(--font-display);
@@ -155,6 +158,12 @@ button{ font-family:inherit; cursor:pointer; }
   color:var(--deep-green);
   text-transform:uppercase;
   margin:14px 0 0;
+  /* Extra visibility for section titles */
+  text-shadow:
+    0 1px 3px rgba(0,0,0,.9),
+    0 3px 10px rgba(0,0,0,.6),
+    0 0 25px rgba(0,0,0,.4);
+  -webkit-text-stroke: 0.3px rgba(110,42,58,.3);
 }
 .names-script{
   font-family:var(--font-script);
@@ -167,6 +176,9 @@ button{ font-family:inherit; cursor:pointer; }
   font-size:15px;
   color:var(--brown);
   opacity:.85;
+  text-shadow:
+    0 1px 2px rgba(0,0,0,.75),
+    0 2px 6px rgba(0,0,0,.4);
 }
 
 /* ============================================================
@@ -449,7 +461,14 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   z-index:2;
   width:100%;
   max-width:var(--container);
-  text-shadow:0 2px 16px rgba(15,10,4,.4), 0 1px 3px rgba(15,10,4,.3);
+  /* Multi-layered shadow for better visibility on busy backgrounds */
+  text-shadow:
+    0 1px 2px rgba(0,0,0,.9),
+    0 2px 8px rgba(0,0,0,.7),
+    0 4px 16px rgba(0,0,0,.5),
+    0 0 30px rgba(0,0,0,.3);
+  /* Slightly boost color saturation */
+  filter: contrast(1.05) saturate(1.1);
 }
 .bg-layer{
   position:absolute;
@@ -569,6 +588,12 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   line-height:1.06;
   color:var(--deep-green);
   letter-spacing:.01em;
+  /* Strong shadow for hero names */
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.95),
+    0 4px 12px rgba(0,0,0,.7),
+    0 6px 20px rgba(0,0,0,.5);
+  -webkit-text-stroke: 0.4px rgba(110,42,58,.25);
 }
 .hero-amp{
   display:block;
@@ -613,6 +638,11 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   font-size:clamp(30px, 8vw, 48px);
   color:var(--deep-green);
   line-height:1.25;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.9),
+    0 4px 10px rgba(0,0,0,.6),
+    0 0 20px rgba(0,0,0,.4);
+  -webkit-text-stroke: 0.3px rgba(110,42,58,.25);
 }
 .couple-and{ display:block; font-family:var(--font-display); font-style:italic; color:var(--gold); font-size:.55em; margin:2px 0; }
 
@@ -620,13 +650,31 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
    CEREMONY CARDS
    ============================================================ */
 .event-card{ background:transparent; }
-.event-day{ font-family:var(--font-display); font-weight:600; font-size:clamp(20px,4.6vw,26px); color:var(--deep-green); margin-top:8px; }
+.event-day{ 
+  font-family:var(--font-display); 
+  font-weight:600; 
+  font-size:clamp(20px,4.6vw,26px); 
+  color:var(--deep-green); 
+  margin-top:8px;
+  text-shadow:
+    0 1px 3px rgba(0,0,0,.85),
+    0 2px 8px rgba(0,0,0,.5);
+}
 .event-malayalam{ font-size:13px; letter-spacing:.08em; color:var(--gold-deep); margin-top:4px; }
 .event-time{ margin-top:14px; font-family:var(--font-display); font-weight:600; font-size:clamp(22px,5.2vw,30px); color:var(--brown); letter-spacing:.04em; }
 .event-time small{ display:block; font-family:var(--font-body); font-size:10px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold-deep); margin-bottom:6px; }
 
 .venue-label{ margin-top:22px; font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold-deep); }
-.venue-name{ font-family:var(--font-display); font-weight:600; font-size:clamp(20px,5vw,26px); color:var(--deep-green); margin-top:6px; }
+.venue-name{ 
+  font-family:var(--font-display); 
+  font-weight:600; 
+  font-size:clamp(20px,5vw,26px); 
+  color:var(--deep-green); 
+  margin-top:6px;
+  text-shadow:
+    0 1px 3px rgba(0,0,0,.85),
+    0 2px 8px rgba(0,0,0,.5);
+}
 .venue-place{ font-size:14px; color:var(--brown); opacity:.8; margin-top:2px; line-height:1.5; }
 
 /* Location tag — small pill distinguishing multi-city functions (e.g. the two receptions) */
