@@ -141,7 +141,7 @@ button{ font-family:inherit; cursor:pointer; }
    ============================================================ */
 .eyebrow{
   font-family:var(--font-body);
-  font-size:11px;
+  font-size:13px;
   letter-spacing:.32em;
   text-transform:uppercase;
   color:var(--gold-deep);
@@ -153,7 +153,7 @@ button{ font-family:inherit; cursor:pointer; }
 .section-title{
   font-family:var(--font-display);
   font-weight:600;
-  font-size:clamp(28px, 6vw, 42px);
+  font-size:clamp(30px, 6vw, 44px);
   letter-spacing:.06em;
   color:var(--deep-green);
   text-transform:uppercase;
@@ -173,7 +173,7 @@ button{ font-family:inherit; cursor:pointer; }
 }
 .body-text{
   font-family:var(--font-body);
-  font-size:15px;
+  font-size:17px;
   color:var(--brown);
   opacity:.85;
   text-shadow:
@@ -577,41 +577,109 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
    HERO
    ============================================================ */
 #hero{ min-height:100vh; min-height:100dvh; padding-top:calc(var(--section-pad-y) + 20px); justify-content:center; }
-.hero-mark{ font-family:var(--font-body); font-size:12px; letter-spacing:.28em; color:var(--gold-deep); text-transform:uppercase; }
+.hero-mark{ 
+  font-family:var(--font-body); 
+  font-size:14px; 
+  letter-spacing:.28em; 
+  color:#8B4513; 
+  text-transform:uppercase; 
+  font-weight:700;
+  background: linear-gradient(135deg, rgba(75, 75, 75, 0.95), rgba(255,248,232,.85));
+  padding: 10px 28px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1.5px solid rgba(201,163,96,.8);
+  box-shadow: 
+    0 4px 12px rgba(0,0,0,.6),
+    0 2px 6px rgba(0,0,0,.4),
+    inset 0 1px 0 rgba(255,255,255,.5);
+  text-shadow:
+    0 1px 2px rgba(0,0,0,.5),
+    0 0 10px rgba(255,255,255,.8);
+}
+.ganesha-icon{
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid rgba(201,163,96,.9);
+  box-shadow: 
+    0 4px 12px rgba(0,0,0,.7),
+    0 2px 6px rgba(0,0,0,.5),
+    0 0 0 3px rgba(255,248,232,.4);
+  object-fit: cover;
+  background: rgba(255,248,232,.9);
+  padding: 3px;
+}
 .hero-symbol{ margin:6px auto 4px; }
-.hero-eyebrow{ margin-top:18px; font-family:var(--font-display); font-style:italic; font-size:18px; letter-spacing:.08em; color:var(--deep-green); opacity:.85; }
+.hero-eyebrow{ 
+  margin-top:18px; 
+  font-family:var(--font-display); 
+  font-style:italic; 
+  font-size:20px; 
+  letter-spacing:.08em; 
+  color:#D4AF37; 
+  opacity:1;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.95),
+    0 3px 10px rgba(0,0,0,.7),
+    0 0 20px rgba(0,0,0,.5);
+  font-weight:500;
+}
 .hero-names{
   margin-top:8px;
   font-family:var(--font-display);
   font-weight:600;
-  font-size:clamp(40px, 12vw, 74px);
+  font-size:clamp(42px, 12vw, 76px);
   line-height:1.06;
-  color:var(--deep-green);
+  color:#FFFFFF;
   letter-spacing:.01em;
   /* Strong shadow for hero names */
   text-shadow:
     0 2px 4px rgba(0,0,0,.95),
-    0 4px 12px rgba(0,0,0,.7),
-    0 6px 20px rgba(0,0,0,.5);
-  -webkit-text-stroke: 0.4px rgba(110,42,58,.25);
+    0 4px 12px rgba(0,0,0,.8),
+    0 6px 20px rgba(0,0,0,.6);
+  -webkit-text-stroke: 0.5px rgba(110,42,58,.3);
 }
 .hero-amp{
-  display:block;
+  display:inline;
   font-family:var(--font-display);
   font-style:italic;
   font-weight:400;
-  font-size:clamp(22px, 5vw, 30px);
-  color:var(--gold);
-  margin:6px 0;
+  font-size:clamp(24px, 5vw, 32px);
+  color:#D4AF37;
+  margin:0 12px;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.9),
+    0 3px 10px rgba(0,0,0,.6);
+  vertical-align: middle;
+  position: relative;
+  top: -0.08em;
 }
-.hero-sub{ margin-top:22px; font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--brown); opacity:.7; }
+.hero-sub{ 
+  margin-top:22px; 
+  font-size:14px; 
+  letter-spacing:.3em; 
+  text-transform:uppercase; 
+  color:#D4AF37; 
+  opacity:1;
+  font-weight:700;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.9),
+    0 3px 8px rgba(0,0,0,.6);
+}
 .hero-date{
   margin-top:10px;
   font-family:var(--font-display);
-  font-weight:500;
-  font-size:clamp(18px, 4vw, 24px);
+  font-weight:600;
+  font-size:clamp(20px, 4vw, 26px);
   letter-spacing:.15em;
-  color:var(--gold-deep);
+  color:#D4AF37;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.95),
+    0 3px 10px rgba(0,0,0,.7),
+    0 0 20px rgba(0,0,0,.5);
 }
 .scroll-cue{
   position:absolute;
@@ -631,11 +699,11 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
 /* ============================================================
    COUPLE INTRO
    ============================================================ */
-.together{ font-family:var(--font-display); font-style:italic; font-size:clamp(16px,3.6vw,20px); color:var(--brown); opacity:.8; margin-bottom:6px; }
+.together{ font-family:var(--font-display); font-style:italic; font-size:clamp(18px,3.6vw,22px); color:var(--brown); opacity:.8; margin-bottom:6px; }
 .couple-names{
   font-family:var(--font-display);
   font-weight:500;
-  font-size:clamp(30px, 8vw, 48px);
+  font-size:clamp(32px, 8vw, 50px);
   color:var(--deep-green);
   line-height:1.25;
   text-shadow:
@@ -644,7 +712,17 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
     0 0 20px rgba(0,0,0,.4);
   -webkit-text-stroke: 0.3px rgba(110,42,58,.25);
 }
-.couple-and{ display:block; font-family:var(--font-display); font-style:italic; color:var(--gold); font-size:.55em; margin:2px 0; }
+.couple-and{ 
+  display:inline; 
+  font-family:var(--font-display); 
+  font-style:italic; 
+  color:var(--gold); 
+  font-size:.55em; 
+  margin:0 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -0.08em;
+}
 
 /* ============================================================
    CEREMONY CARDS
@@ -653,29 +731,29 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
 .event-day{ 
   font-family:var(--font-display); 
   font-weight:600; 
-  font-size:clamp(20px,4.6vw,26px); 
+  font-size:clamp(22px,4.6vw,28px); 
   color:var(--deep-green); 
   margin-top:8px;
   text-shadow:
     0 1px 3px rgba(0,0,0,.85),
     0 2px 8px rgba(0,0,0,.5);
 }
-.event-malayalam{ font-size:13px; letter-spacing:.08em; color:var(--gold-deep); margin-top:4px; }
-.event-time{ margin-top:14px; font-family:var(--font-display); font-weight:600; font-size:clamp(22px,5.2vw,30px); color:var(--brown); letter-spacing:.04em; }
-.event-time small{ display:block; font-family:var(--font-body); font-size:10px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold-deep); margin-bottom:6px; }
+.event-malayalam{ font-size:15px; letter-spacing:.08em; color:var(--gold-deep); margin-top:4px; }
+.event-time{ margin-top:14px; font-family:var(--font-display); font-weight:600; font-size:clamp(24px,5.2vw,32px); color:var(--brown); letter-spacing:.04em; }
+.event-time small{ display:block; font-family:var(--font-body); font-size:12px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold-deep); margin-bottom:6px; }
 
-.venue-label{ margin-top:22px; font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold-deep); }
+.venue-label{ margin-top:22px; font-size:13px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold-deep); }
 .venue-name{ 
   font-family:var(--font-display); 
   font-weight:600; 
-  font-size:clamp(20px,5vw,26px); 
+  font-size:clamp(22px,5vw,28px); 
   color:var(--deep-green); 
   margin-top:6px;
   text-shadow:
     0 1px 3px rgba(0,0,0,.85),
     0 2px 8px rgba(0,0,0,.5);
 }
-.venue-place{ font-size:14px; color:var(--brown); opacity:.8; margin-top:2px; line-height:1.5; }
+.venue-place{ font-size:16px; color:var(--brown); opacity:.8; margin-top:2px; line-height:1.5; }
 
 /* Location tag — small pill distinguishing multi-city functions (e.g. the two receptions) */
 .location-tag{
@@ -685,7 +763,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   border:1px solid var(--gold);
   border-radius:20px;
   font-family:var(--font-body);
-  font-size:10px;
+  font-size:12px;
   font-weight:600;
   letter-spacing:.26em;
   text-transform:uppercase;
@@ -693,11 +771,11 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
 }
 
 /* Dress code line — mirrors the venue label/name pairing */
-.dress-label{ margin-top:20px; font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold-deep); }
-.dress-value{ font-family:var(--font-body); font-size:14px; letter-spacing:.02em; color:var(--brown); opacity:.85; margin-top:5px; }
+.dress-label{ margin-top:20px; font-size:13px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold-deep); }
+.dress-value{ font-family:var(--font-body); font-size:16px; letter-spacing:.02em; color:var(--brown); opacity:.85; margin-top:5px; }
 
 /* Small italic note — used where a time/detail is intentionally not yet announced */
-.event-note{ margin-top:14px; font-family:var(--font-display); font-style:italic; font-size:15px; color:var(--gold-deep); opacity:.9; }
+.event-note{ margin-top:14px; font-family:var(--font-display); font-style:italic; font-size:17px; color:var(--gold-deep); opacity:.9; }
 
 .btn{
   display:inline-flex;
@@ -707,7 +785,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   padding:13px 30px;
   border:1px solid var(--gold);
   color:var(--deep-green);
-  font-size:11px;
+  font-size:13px;
   letter-spacing:.24em;
   text-transform:uppercase;
   font-weight:600;
@@ -770,7 +848,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
 }
 .countdown .lbl{
   margin-top:10px;
-  font-size:10px;
+  font-size:12px;
   letter-spacing:.26em;
   text-transform:uppercase;
   font-weight:600;
@@ -829,7 +907,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   flex:1 1 auto;
   font-family:var(--font-display);
   font-weight:600;
-  font-size:clamp(17px,4vw,20px);
+  font-size:clamp(19px,4vw,22px);
   color:var(--jasmine);
 }
 .location-card .location-cta{
@@ -837,14 +915,14 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   display:inline-flex;
   align-items:center;
   gap:6px;
-  font-size:10px;
+  font-size:12px;
   letter-spacing:.18em;
   text-transform:uppercase;
   color:var(--gold-soft);
   white-space:nowrap;
 }
 .location-card .location-cta .arrow{ transition:transform .35s var(--ease-soft); }
-.location-card .location-address{ flex:0 0 auto; font-size:11px; letter-spacing:.02em; color:var(--gold-soft); opacity:.85; line-height:1.5; text-align:right; }
+.location-card .location-address{ flex:0 0 auto; font-size:13px; letter-spacing:.02em; color:var(--gold-soft); opacity:.85; line-height:1.5; text-align:right; }
 .location-card.is-static{ cursor:default; }
 .location-card:active{
   background:linear-gradient(135deg, rgba(255,248,232,.16), rgba(255,248,232,.05));
@@ -873,7 +951,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   font-family:var(--font-display);
   font-style:italic;
   font-weight:500;
-  font-size:clamp(19px, 4.6vw, 27px);
+  font-size:clamp(21px, 4.6vw, 29px);
   line-height:1.55;
   color:var(--deep-green);
 }
@@ -882,9 +960,9 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
    FAMILY
    ============================================================ */
 .family-grid{ display:flex; flex-direction:column; gap:36px; margin-top:30px; }
-.family-block .who{ font-size:11px; letter-spacing:.26em; text-transform:uppercase; color:var(--gold-deep); }
-.family-block .parents{ font-family:var(--font-display); font-weight:600; font-size:clamp(19px,4.6vw,24px); color:var(--deep-green); margin-top:8px; line-height:1.4; }
-.family-block .place{ margin-top:6px; font-size:13.5px; color:var(--brown); opacity:.78; }
+.family-block .who{ font-size:13px; letter-spacing:.26em; text-transform:uppercase; color:var(--gold-deep); }
+.family-block .parents{ font-family:var(--font-display); font-weight:600; font-size:clamp(21px,4.6vw,26px); color:var(--deep-green); margin-top:8px; line-height:1.4; }
+.family-block .place{ margin-top:6px; font-size:15.5px; color:var(--brown); opacity:.78; }
 .family-divider{ width:60px; height:1px; background:var(--gold); margin:0 auto; opacity:.5; }
 
 /* ============================================================
@@ -1071,7 +1149,15 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
    ============================================================ */
 .bg-f-closing .body-text{ color:var(--jasmine); opacity:.85; }
 .closing-msg{ font-family:var(--font-display); font-style:italic; font-weight:500; font-size:clamp(18px,4.4vw,23px); color:var(--jasmine); line-height:1.6; }
-.closing-names{ margin-top:26px; font-family:var(--font-script); font-size:clamp(34px,9vw,52px); color:var(--gold-soft); }
+.closing-names{ margin-top:26px; font-family:var(--font-script); font-size:clamp(34px,9vw,52px); color:var(--gold-soft); line-height:1.3; }
+.closing-amp{ 
+  display:block;
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:0.6em;
+  margin:4px 0;
+  color:#D4AF37;
+}
 .closing-date{ margin-top:6px; font-size:13px; letter-spacing:.32em; color:var(--jasmine); opacity:.75; }
 .closing-final{ margin-top:36px; padding-top:24px; border-top:1px solid rgba(255,248,232,.25); font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,248,232,.5); }
 
@@ -1142,6 +1228,9 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
     <div class="bg-layer" aria-hidden="true"></div>
     <div class="overlay overlay-ivory" aria-hidden="true"></div>
     <div class="section-inner">
+      <!-- Ganesha Icon -->
+      <img class="ganesha-icon reveal" src="assets/ganesh.jpg" alt="Lord Ganesha" width="50" height="50" loading="eager">
+      
       <div class="hero-mark reveal">|| Shree Ganeshay Namah ||</div>
 
       <svg class="lamp-svg reveal" width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
@@ -1153,9 +1242,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
 
       <div class="hero-eyebrow reveal">Together with their families</div>
       <h1 class="hero-names reveal-scale">
-        Swathi S
-        <span class="hero-amp">&amp;</span>
-        Aswinlal V
+        Swathi S <span class="hero-amp">&amp;</span> Aswinlal V
       </h1>
 
       <div class="ornament-divider reveal">
@@ -1173,7 +1260,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   </section>
 
   <!-- COUPLE INTRODUCTION -->
-  <section id="couple" class="section bg-a bg-a-couple">
+  <!-- <section id="couple" class="section bg-a bg-a-couple">
     <div class="bg-layer" aria-hidden="true"></div>
     <div class="overlay overlay-ivory" aria-hidden="true"></div>
     <div class="section-inner">
@@ -1188,7 +1275,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
         <span class="line"></span><span class="diamond"></span><span class="line"></span>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- WEDDING CEREMONY -->
   <section id="ceremony" class="section bg-b bg-b-ceremony">
@@ -1223,7 +1310,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   </section>
 
   <!-- WEDDING MESSAGE -->
-  <section id="message" class="section bg-b bg-b-message">
+  <!-- <section id="message" class="section bg-b bg-b-message">
     <div class="bg-layer" aria-hidden="true"></div>
     <div class="overlay overlay-cream" aria-hidden="true"></div>
     <div class="section-inner corner-frame reveal-scale">
@@ -1236,7 +1323,7 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
         <span class="line"></span><span class="diamond"></span><span class="line"></span>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- VENUE -->
   <section id="locations" class="section bg-b bg-b-locations">
@@ -1273,16 +1360,16 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
 
       <div class="family-grid">
         <div class="family-block reveal">
-          <div class="who">Groom's Family</div>
-          <div class="parents">Shri. Manoj V<br>&amp; Smt. Seena Manoj</div>
-          <div class="place">&lsquo;Manasi (H)&rsquo;, Vaarippurath, Kommeri, Kozhikode</div>
-          <div class="family-divider" style="margin-top:20px;"></div>
-        </div>
-        <div class="family-block reveal">
           <div class="who">Bride's Family</div>
           <div class="parents">Late Shri. Suresh C K<br>&amp; Smt. Shyja T R</div>
           <div class="place">&lsquo;Aiswarya (H)&rsquo;, Madathil Mukku, Chevayur, Kozhikode</div>
           <div class="place" style="margin-top:8px;">Mob: 9400345847, 8606244009</div>
+          <div class="family-divider" style="margin-top:20px;"></div>
+        </div>
+        <div class="family-block reveal">
+          <div class="who">Groom's Family</div>
+          <div class="parents">Shri. Manoj V<br>&amp; Smt. Seena Manoj</div>
+          <div class="place">&lsquo;Manasi (H)&rsquo;, Vaarippurath, Kommeri, Kozhikode</div>
         </div>
       </div>
     </div>
@@ -1392,7 +1479,11 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
       </svg>
       <p class="closing-msg reveal" style="margin-top:18px;">We look forward to celebrating this special occasion with you</p>
 
-      <div class="closing-names reveal-scale">Swathi &amp; Aswinlal</div>
+      <div class="closing-names reveal-scale">
+        Swathi
+        <span class="closing-amp">&amp;</span>
+        Aswinlal
+      </div>
       <div class="closing-date reveal">01 · 11 · 2026</div>
 
       <div class="closing-final">Created by <a href="https://sahilmuhd.com" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">sahilmuhd.com</a></div>
