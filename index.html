@@ -693,16 +693,22 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
   z-index:2;
 }
 .scroll-cue span{ 
-  font-size:12px; 
+  font-size:13px; 
   letter-spacing:.28em; 
   text-transform:uppercase; 
   color:#FFFFFF; 
   opacity:1;
-  font-weight:600;
+  font-weight:700;
   text-shadow:
-    0 2px 4px rgba(0,0,0,.95),
-    0 3px 10px rgba(0,0,0,.7),
-    0 0 20px rgba(0,0,0,.5);
+    0 2px 6px rgba(0,0,0,1),
+    0 4px 12px rgba(0,0,0,.9),
+    0 0 30px rgba(0,0,0,.7);
+  background: linear-gradient(135deg, rgba(0,0,0,.7), rgba(0,0,0,.5));
+  padding: 10px 24px;
+  border-radius: 30px;
+  border: 1.5px solid rgba(255,255,255,.4);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.6);
 }
 .scroll-cue .stem{ width:1px; height:34px; background:linear-gradient(180deg, var(--gold), transparent); animation:cue-move 2.2s ease-in-out infinite; }
 @keyframes cue-move{ 0%{ opacity:.2; transform:scaleY(.4); transform-origin:top;} 50%{ opacity:1; transform:scaleY(1); transform-origin:top;} 100%{ opacity:.2; transform:scaleY(.4); transform-origin:top;} }
@@ -972,20 +978,24 @@ main.is-visible{ opacity:1; transition:opacity 1.2s var(--ease-soft); }
    ============================================================ */
 .family-grid{ display:flex; flex-direction:column; gap:36px; margin-top:30px; }
 .family-block .who{ 
-  font-size:13px; 
+  font-size:14px; 
   letter-spacing:.26em; 
   text-transform:uppercase; 
   color:#FFFFFF;
-  font-weight:700;
+  font-weight:800;
   text-shadow:
-    0 2px 4px rgba(0,0,0,.95),
-    0 3px 10px rgba(0,0,0,.7),
-    0 0 20px rgba(0,0,0,.5);
-  background: linear-gradient(135deg, rgba(201,163,96,.2), rgba(201,163,96,.1));
-  padding: 8px 20px;
-  border-radius: 25px;
+    0 2px 6px rgba(0,0,0,1),
+    0 4px 12px rgba(0,0,0,.9),
+    0 0 30px rgba(0,0,0,.7);
+  background: linear-gradient(135deg, rgba(110,42,58,.85), rgba(110,42,58,.75));
+  padding: 12px 28px;
+  border-radius: 30px;
   display: inline-block;
-  border: 1px solid rgba(201,163,96,.5);
+  border: 2px solid rgba(201,163,96,.9);
+  box-shadow: 
+    0 4px 16px rgba(0,0,0,.7),
+    0 0 0 3px rgba(201,163,96,.2);
+  backdrop-filter: blur(4px);
 }
 .family-block .parents{ font-family:var(--font-display); font-weight:600; font-size:clamp(21px,4.6vw,26px); color:var(--deep-green); margin-top:8px; line-height:1.4; }
 .family-block .place{ margin-top:6px; font-size:15.5px; color:var(--brown); opacity:.78; }
